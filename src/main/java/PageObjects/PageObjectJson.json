@@ -18,5 +18,12 @@
     "dropWebsite":"https://jqueryui.com/droppable/",
     "draggable1":"#draggable",
     "droppable1":"#droppable",
-    "doubleClickCSS":"[ondblclick='myFunction()']"
+    "doubleClickCSS":"[ondblclick='myFunction()']",
+    "rightClickclassCSS":".context-menu-one.btn.btn-neutral",
+    
+    
+    
+    "HDILXpath":"//table/tbody/tr/td//a[contains(text(),'HDIL')]"
+    
+    
 }

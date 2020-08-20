@@ -6,8 +6,8 @@
       <class name="HandlingDropDownCombobox">
         <methods>
           <include name="teardown"/>
-          <include name="doubleClick"/>
           <include name="setup"/>
+          <include name="rClick"/>
         </methods>
       </class> <!-- HandlingDropDownCombobox -->
     </classes>

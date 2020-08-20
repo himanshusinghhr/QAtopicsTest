@@ -25,7 +25,9 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.interactions.Action;
 import org.openqa.selenium.interactions.Actions;
+import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.Select;
+import org.openqa.selenium.support.ui.WebDriverWait;
 
 /**
  *
@@ -172,7 +174,8 @@ public class utilityFunctions extends Methods {
             return false;
         }
     }
-    public boolean rightClick()
+    //Double click
+    public boolean Double1Click()
     {
         driver.get("http://demo.guru99.com/test/simple_context_menu.html");
         Actions act = new Actions(driver);
@@ -189,5 +192,33 @@ public class utilityFunctions extends Methods {
         
         
     }
+    
+    //Right Click
+    public boolean rightClick()
+    {
+        driver.get("http://demo.guru99.com/test/simple_context_menu.html");
+        Actions act = new Actions(driver);
+        try{
+        WebElement we = chooseElement("CSS",find.element("rightClickclassCSS"));
+        act.contextClick(we).build().perform();
+        
+        return true;
+        }
+        catch(Exception e)
+        {
+            return false;
+        }
+    }
+    
+    public void ExplicitWait()
+    {
+        //For a element to be waited for but with a limit of 10 seconds
+        //Not advisable in such cases because its a hard wait
+        WebDriverWait we = new WebDriverWait(driver, 10);
+        we.until(ExpectedConditions.visibilityOfElementLocated(By.id("statedropdown")));
+                
+    }
+    
+ 
     
 }
