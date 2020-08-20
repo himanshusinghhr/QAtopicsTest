@@ -1,0 +1,8 @@
+#surefire_0
+#Thu Aug 20 17:31:27 IST 2020
+maven.ext.class.path=C\:\\Program Files\\NetBeans-11.2\\netbeans\\java\\maven-nblib\\netbeans-eventspy.jar
+user.dir=E\:\\QA Daily Task\\QATopics20-8-2020\\QATopicsTest
+file.encoding=UTF-8
+localRepository=C\:\\Users\\hp\\.m2\\repository
+basedir=E\:\\QA Daily Task\\QATopics20-8-2020\\QATopicsTest
+test=HandlingDropDownCombobox\#checkBrokenLinks

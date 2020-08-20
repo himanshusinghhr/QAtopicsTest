@@ -23,7 +23,8 @@
     
     
     
-    "HDILXpath":"//table/tbody/tr/td//a[contains(text(),'HDIL')]"
+    "HDILXpath":"//table/tbody/tr/td//a[contains(text(),'HDIL')]",
+    "linksTotalCSS":"a[href*='https:']"
     
     
 }

@@ -9,6 +9,9 @@ import PageObjects.JSONReader;
 import com.sun.org.apache.bcel.internal.generic.AALOAD;
 import java.io.File;
 import java.io.*;
+import java.net.HttpURLConnection;
+import java.net.URL;
+import java.util.Iterator;
 import java.util.List;
 import java.util.Random;
 import java.util.concurrent.TimeUnit;
@@ -210,6 +213,8 @@ public class utilityFunctions extends Methods {
         }
     }
     
+    
+    //Explicit Wiat
     public void ExplicitWait()
     {
         //For a element to be waited for but with a limit of 10 seconds
@@ -217,6 +222,46 @@ public class utilityFunctions extends Methods {
         WebDriverWait we = new WebDriverWait(driver, 10);
         we.until(ExpectedConditions.visibilityOfElementLocated(By.id("statedropdown")));
                 
+    }
+    
+    
+    
+    //BrokenLinksCheck
+    public String BrokenLinks()
+    {
+        driver.get(find.element("QAURL"));
+        List al = chooseElements("CSS",find.element("linksTotalCSS"));
+        Iterator<WebElement> it = al.iterator();
+        String url="";
+        HttpURLConnection huc = null;
+        int respCode = 200;
+        while(it.hasNext())
+        {
+           url = it.next().getAttribute("href");
+           try{
+               huc = (HttpURLConnection)(new URL(url).openConnection());
+                
+                huc.setRequestMethod("HEAD");
+                
+                huc.connect();
+                
+                respCode = huc.getResponseCode();
+           }
+           catch(Exception e)
+           {
+               
+               
+           }
+           if(respCode>=400)
+           {
+               break;
+           }
+            
+        }
+        if(respCode>=400)
+            return "error";
+        else
+            return "fine";
     }
     
  

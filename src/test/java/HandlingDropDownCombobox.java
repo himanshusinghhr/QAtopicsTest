@@ -80,7 +80,11 @@ public class HandlingDropDownCombobox extends utilityFunctions{
         assertTrue(rightClick());
     }
     
-   
+   @Test(testName = "TC007",description = "BrokenLinksTest")
+   public void checkBrokenLinks()
+   {
+       assertEquals(BrokenLinks(),"fine");
+   }
     
     
 }
