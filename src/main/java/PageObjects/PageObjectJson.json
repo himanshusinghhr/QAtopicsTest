@@ -1,0 +1,22 @@
+{
+    "urlDropDown": "http://demo.guru99.com/test/newtours/register.php",
+    "CountryCSS":"[name='country']",
+    
+    
+    "MultipleSelectURL":"http://output.jsbin.com/osebed/2",
+    "FruitsID":"fruits",
+    
+    
+    "FBURL":"https://www.facebook.com/",
+    "ElementFindColor":"[name='login']",
+    
+    
+    "QAURL":"https://qainfotech.com/",
+    "ServicesXPATH":"//*[@id='devn-mainmenu']/li/a[text()='Services']",
+    "DataScienceXPATH":"//ul[@class='header-ul']/li/a[text()='Data Sciences']",
+    
+    "dropWebsite":"https://jqueryui.com/droppable/",
+    "draggable1":"#draggable",
+    "droppable1":"#droppable",
+    "doubleClickCSS":"[ondblclick='myFunction()']"
+}

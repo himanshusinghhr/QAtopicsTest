@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="0" ignored="5" total="6" passed="1">
+  <reporter-output>
+  </reporter-output>
+  <suite name="HandlingDropDownCombobox" duration-ms="11415" started-at="2020-08-20T10:19:43Z" finished-at="2020-08-20T10:19:54Z">
+    <groups>
+    </groups>
+    <test name="Command line test" duration-ms="11415" started-at="2020-08-20T10:19:43Z" finished-at="2020-08-20T10:19:54Z">
+      <class name="HandlingDropDownCombobox">
+        <test-method status="PASS" signature="setup()[pri:0, instance:HandlingDropDownCombobox@1e643faf]" name="setup" is-config="true" duration-ms="7632" started-at="2020-08-20T15:49:43Z" finished-at="2020-08-20T15:49:50Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method status="PASS" signature="doubleClick()[pri:0, instance:HandlingDropDownCombobox@1e643faf]" name="doubleClick" duration-ms="3761" started-at="2020-08-20T15:49:50Z" description="Double Clic and alert Handle" finished-at="2020-08-20T15:49:54Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- doubleClick -->
+        <test-method status="PASS" signature="teardown()[pri:0, instance:HandlingDropDownCombobox@1e643faf]" name="teardown" is-config="true" duration-ms="0" started-at="2020-08-20T15:49:54Z" finished-at="2020-08-20T15:49:54Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- teardown -->
+      </class> <!-- HandlingDropDownCombobox -->
+    </test> <!-- Command line test -->
+  </suite> <!-- HandlingDropDownCombobox -->
+</testng-results>
