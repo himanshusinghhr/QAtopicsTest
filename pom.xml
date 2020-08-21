@@ -46,21 +46,23 @@
           </dependency>
      </dependencies>
       <build>
-    <pluginManagement>
-      <plugins>
-        <plugin>
-          <groupId>org.apache.maven.plugins</groupId>
-          <artifactId>maven-surefire-plugin</artifactId>
-          <version>2.14.1</version>
-          <configuration>
-              <suiteXmlFiles>
-    <!-- pass testng.xml files as argument from command line -->
-    <suiteXmlFile>E:\QA Daily Task\QATopics20-8-2020\QATopicsTest\src\test\java\TestRunner.xml</suiteXmlFile>
-</suiteXmlFiles>
-          </configuration>
-        </plugin>
-      </plugins>
-    </pluginManagement>
+          <plugins>
+    
+      <plugin>
+        <groupId>org.apache.maven.plugins</groupId>
+        <artifactId>maven-surefire-plugin</artifactId>
+        <version>3.0.0-M5</version>
+        <configuration>
+          <suiteXmlFiles>
+              
+            <!--suiteXmlFile>${suiteXmlFile}</suiteXmlFile -->
+           
+          </suiteXmlFiles>
+        </configuration>
+      </plugin>
+   
+</plugins>
+    
   </build>
     <properties>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>

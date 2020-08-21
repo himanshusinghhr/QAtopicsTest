@@ -32,7 +32,7 @@ public class HandlingDropDownCombobox extends utilityFunctions{
     @AfterClass
     public void teardown()
     {
-      //  tearDownDriver();
+       tearDownDriver();
     }
 
     

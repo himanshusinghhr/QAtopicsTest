@@ -1,25 +1,25 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="0" ignored="6" total="7" passed="1">
+<testng-results skipped="0" failed="0" ignored="0" total="1" passed="1">
   <reporter-output>
   </reporter-output>
-  <suite name="HandlingDropDownCombobox" duration-ms="11732" started-at="2020-08-20T10:45:06Z" finished-at="2020-08-20T10:45:17Z">
+  <suite name="Surefire suite" duration-ms="8771" started-at="2020-08-21T08:07:49Z" finished-at="2020-08-21T08:07:58Z">
     <groups>
     </groups>
-    <test name="Command line test" duration-ms="11732" started-at="2020-08-20T10:45:06Z" finished-at="2020-08-20T10:45:17Z">
-      <class name="HandlingDropDownCombobox">
-        <test-method status="PASS" signature="setup()[pri:0, instance:HandlingDropDownCombobox@1e643faf]" name="setup" is-config="true" duration-ms="7953" started-at="2020-08-20T16:15:06Z" finished-at="2020-08-20T16:15:14Z">
+    <test name="Surefire test" duration-ms="8771" started-at="2020-08-21T08:07:49Z" finished-at="2020-08-21T08:07:58Z">
+      <class name="SeleniumGridTest">
+        <test-method status="PASS" signature="setup()[pri:0, instance:SeleniumGridTest@6be46e8f]" name="setup" is-config="true" duration-ms="22" started-at="2020-08-21T13:37:49Z" finished-at="2020-08-21T13:37:49Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method status="PASS" signature="rClick()[pri:0, instance:HandlingDropDownCombobox@1e643faf]" name="rClick" duration-ms="3743" started-at="2020-08-20T16:15:14Z" description="Right Click" finished-at="2020-08-20T16:15:17Z">
+        <test-method status="PASS" signature="test()[pri:0, instance:SeleniumGridTest@6be46e8f]" name="test" duration-ms="8729" started-at="2020-08-21T13:37:49Z" finished-at="2020-08-21T13:37:58Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- rClick -->
-        <test-method status="PASS" signature="teardown()[pri:0, instance:HandlingDropDownCombobox@1e643faf]" name="teardown" is-config="true" duration-ms="0" started-at="2020-08-20T16:15:17Z" finished-at="2020-08-20T16:15:17Z">
+        </test-method> <!-- test -->
+        <test-method status="PASS" signature="teardown()[pri:0, instance:SeleniumGridTest@6be46e8f]" name="teardown" is-config="true" duration-ms="0" started-at="2020-08-21T13:37:58Z" finished-at="2020-08-21T13:37:58Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- teardown -->
-      </class> <!-- HandlingDropDownCombobox -->
-    </test> <!-- Command line test -->
-  </suite> <!-- HandlingDropDownCombobox -->
+      </class> <!-- SeleniumGridTest -->
+    </test> <!-- Surefire test -->
+  </suite> <!-- Surefire suite -->
 </testng-results>

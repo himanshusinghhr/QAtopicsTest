@@ -254,6 +254,7 @@ public class utilityFunctions extends Methods {
            }
            if(respCode>=400)
            {
+               System.out.println("This url is broken"+url);
                break;
            }
             
@@ -263,6 +264,9 @@ public class utilityFunctions extends Methods {
         else
             return "fine";
     }
+    
+    //Selenium Grid 
+    
     
  
     
